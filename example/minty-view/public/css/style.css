@@ -1,0 +1,315 @@
+html {
+  box-sizing: border-box;
+  color: #333;
+  /* font: 18pt 'Oswald'; */
+  letter-spacing: 0.05em;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+button {
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.5em 1em;
+  background-color: #4db14d;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  font-size: 15pt;
+}
+
+button:focus {
+  background-color: #3e8d3e;
+}
+
+button.outline {
+  border: 1px solid #999;
+  background-color: #fff;
+  color: #555;
+}
+
+button.outline:hover {
+  border-color: #4db14d;
+  color: #4db14d;
+}
+
+.unauthorized-layout {
+  margin: 1em;
+}
+
+.primary-layout {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.primary-layout .main-nav {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-right: 3px solid #B6D4CD;
+}
+
+.primary-layout .page-content {
+    /* position: absolute; */
+    
+    height: 100%;
+    left: 275px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.primary-layout .main-nav .nav-item {
+    display: block;
+    padding: 10px;
+}
+
+.primary-layout .main-nav .nav-item.active {
+    color: white;
+    background-color: #4db14d;
+}
+
+.primary-layout .page-content .subnav-item {
+  display: block;
+  padding: 10px;
+
+}
+
+.primary-layout .page-content .subnav-item.active{
+  color: white;
+  background-color: #4db14d;
+}
+
+.primary-header {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.primary-header nav {
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 2em;
+  border-bottom: 2px solid #555;
+}
+
+.primary-header nav a {
+  display: inline-block;
+  padding: 0.3em 1em;
+  color: #555;
+}
+
+.primary-header nav a:hover {
+  background-color: #eee;
+}
+
+.primary-header nav a.active {
+  background-color: #555;
+  color: #fff;
+}
+
+main {
+  margin-top: 1em;
+}
+
+.user-sub-layout {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+ aside {
+  overflow: auto;
+  height: 100%;
+  border-right: 5px solid #B6D4CD;
+}
+
+ aside nav a {
+  color: #333;
+  padding: 0.2em 1em;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+ aside nav a.active {
+  background-color: #555;
+  color: #fff;
+}
+/* 
+.primary-content {
+  height: 100%;
+  width: 90%;
+  overflow: auto;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 2em;
+} */
+
+/*  */
+
+.mock-browser {
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  padding: 0.3em;
+  font: 14pt Arial;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mock-browser .path {
+  margin-left: 0.5em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  -ms-flex: 1;
+  flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  color: #999;
+  border-radius: 3px;
+}
+
+.mock-browser .path>div:last-child {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.mock-browser .path input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0;
+  outline: none;
+}
+
+.mock-browser .path input:focus {
+  color: blue;
+}
+
+/* css resize */
+
+.Resizer {
+  background: #000;
+  opacity: .2;
+  z-index: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+/* .Resizer:hover {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+} */
+
+.Resizer.horizontal {
+  height: 11px;
+  margin: -5px 0;
+  border-top: 5px solid rgba(255, 255, 255, 0);
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  cursor: row-resize;
+  width: 100%;
+}
+
+/* .Resizer.horizontal:hover {
+  border-top: 5px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+} */
+
+.Resizer.vertical {
+  width: 11px;
+  margin: 0 -5px;
+  border-left: 5px solid rgba(255, 255, 255, 0);
+  border-right: 5px solid rgba(255, 255, 255, 0);
+  cursor: col-resize;
+}
+
+/* .Resizer.vertical:hover {
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
+  border-right: 5px solid rgba(0, 0, 0, 0.5);
+} */
+.Resizer.disabled {
+cursor: not-allowed;
+}
+.Resizer.disabled:hover {
+border-color: transparent;
+}
+
+
+/* css table */
+
+a {
+  color: #02bfe6;
+  font-weight: bold;
+  text-decoration: none;
+}
+strong {
+  font-weight: bold;
+}
+.FormInput {
+  display: inline-block;
+}
+label {
+  display: block;
+}
+.react-resizable{
+  max-width: 100%;
+}
+.table {
+  padding: 20px;
+}
+
+
+
+
+.product-sub-layout {
+  width: 100%;
+}
+
+.primary-content {
+  height: 100%;
+  width: 90%;
+  overflow: auto;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 2em;
+}
+.date-picker {
+  margin: 20px;
+}
+input {
+  border: none ;
+}
+.custom-input{
+  background: #a199a8;
+
+}

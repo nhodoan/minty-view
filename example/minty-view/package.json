@@ -1,0 +1,45 @@
+{
+  "name": "Minty-View",
+  "version": "1.0.0",
+  "author": "Nhodoan",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "webpack -d --watch"
+  },
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "body-parser": "^1.18.0",
+    "css-loader": "^0.28.7",
+    "d3": "^4.10.2",
+    "express": "^4.15.4",
+    "moment": "^2.18.1",
+    "react": "*",
+    "react-charts": "^0.1.0",
+    "react-datepicker": "^0.55.0",
+    "react-dom": "*",
+    "react-faux-dom": "^4.0.3",
+    "react-redux": "*",
+    "react-resizable": "^1.7.4",
+    "react-router-dom": "*",
+    "react-router-redux": "*",
+    "react-split-pane": "^0.1.66",
+    "react-table": "^6.5.3",
+    "redux": "*",
+    "style-loader": "^0.18.2",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "*",
+    "babelify": "*",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "*",
+    "webpack-stream": "*"
+  }
+}
